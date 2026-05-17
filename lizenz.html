@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Platzhalterseite für Lizenzbedingungen">
+  <title>Lifty | Lizenz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Hauptnavigation">
+      <a class="logo" href="index.html" aria-label="Lifty Startseite">
+        <div class="brand-symbol small" aria-label="Lifty Bildmarke"></div>
+        <span>Lifty</span>
+      </a>
+      <button class="menu-button" type="button" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="main-menu">
+        <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+      </button>
+      <ul class="nav-links" id="main-menu">
+        <li><a  href="index.html">Home</a></li>
+        <li><a  href="about.html">About us</a></li>
+        <li><a  href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="page-hero"><div class="container"><span class="eyebrow">Lizenz</span><h1>Lizenzbedingungen</h1><p class="lead">Die Lizenzbedingungen regeln die Nutzungsrechte von Lifty's digitalen Dienstleistungen.</p></div></section>
+    <section class="section"><div class="container legal-text" id="nutzungsrechte">
+      <h2>Erworbene Nutzungsrechte</h2>
+      <p>Der Kauf eines Lifty Abonnements berechtigt Nutzer*innen zur zeitlich beschränkten Nutzung der Lifty-Dienste.
+        Diese Nutzung darf ausschließlich zu persönlichen, nicht-kommerziellen Zwecke erfolgen und der Zugriff darf nicht an Dritte weitergeben werden.
+        Mit Ende des Vertrags endet auch der Zugriff auf die Funktionen zur Erstellung und Änderung von Trainingsplänen, sowie zum Eintragen neuer Workout-Sessions. 
+        Auf persönliche Workout-Daten von vergangenen Sessions können ehemalige Nutzer*innen weiterhin zugreifen. 
+      </p>
+      <h2>Verbleibende Rechte beim Unternehmen</h2>
+      <p>Auch nach einem Kauf bleibt Lifty der alleinige Eigentümer der Software-Dienste. Alle Rechte an der Website, digitalen Funktionen und den Marken bleiben bei Lifty.</p>
+      <h2>Haftungsbeschränkung</h2>
+      <p>Die Nutzung aller mittels Lifty erstellten Trainigspläne erfolgt auf eigener Verantwortung. 
+        Lifty übernimmt keine Haftung für Verletzungen oder sonstige gesundheitliche Schäden durch falsche Ausführungen von vorgeschlagenen Übungen. 
+        Für technische Probleme oder Datenverluste wird keine Gewähr übernommen.</p>
+    </div></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html">
+          <div class="brand-symbol small" aria-label="Lifty Bildmarke"></div>
+          <span>Lifty</span>
+        </a>
+        <p class="muted">© 2026 Lifty.</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Website">
+        <strong>Website</strong>
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+
+      <nav class="footer-links" aria-label="Rechtliches">
+        <strong>Rechtliches</strong>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="lizenz.html">Lizenz</a>
+        <a href="barrierefreiheit.html">Barrierefreiheitserklärung</a>
+        <a href="urheberrecht.html">Urheberrecht & Medien</a>
+      </nav>
+
+    </div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

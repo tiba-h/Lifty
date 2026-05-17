@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About us und Markenformen des fiktiven Lifty Webshops">
+  <title>Lifty | About us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Hauptnavigation">
+      <a class="logo" href="index.html" aria-label="Lifty Startseite">
+        <div class="brand-symbol small" aria-label="Lifty Bildmarke"></div>
+        <span>Lifty</span>
+      </a>
+      <button class="menu-button" type="button" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="main-menu">
+        <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+      </button>
+      <ul class="nav-links" id="main-menu">
+        <li><a  href="index.html">Home</a></li>
+        <li><a aria-current="page" href="about.html">About us</a></li>
+        <li><a  href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">About us</span>
+        <h1>Unsere Marke</h1>
+        <p class="lead">Diese Seite beschreibt die Markenidee von Lifty.</p>
+      </div>
+    </section>
+    <section class="section" id="markenformen">
+      <div class="container legal-text">
+        <h2>Drei Markenformen</h2>
+        <div class="grid-3">
+          <article class="card">
+            <div class="brand-symbol" aria-label="Lifty Bildmarke"></div>
+            <h3>Bildmarke</h3>
+            <p>Die Bildmarke besteht aus einem weißen, stylisierten, geometrischen Buchstaben "L" innerhalb eines blau-türkischen Quadrats mit abgerundeten Ecken. Die Bildmarke kann unabhängig von der Wortmarke als eigenständiges Logo verwendet werden.</p>
+          </article>
+          <article class="card">
+            <h3 class="brand-word">Lifty</h3>
+            <h3>Wortmarke</h3>
+            <p>Die Wortmarke "Lifty" steht für die digitale Fitnessplattform, die hauptsächlich die Erstellung von adaptiven Traingsplänen bietet. Der Name "Lifty" leitet sich aus dem englischen Wort "lift" ab, was heben bedeutet und oft im Zusammenhang mit Gewichte heben benutzt wird.</p>
+          </article>
+          <article class="card">
+            <div class="media-box color-mark">
+              <div class="color-item">
+                <div class="color-swatch primary-swatch"></div>
+                <span>#0041c8</span>
+              </div>
+
+              <div class="color-item">
+                <div class="color-swatch tertiary-swatch"></div>
+                <span>#00576c</span>
+              </div>
+
+            </div>
+            <h3>Farbmarke</h3>
+            <p>Die Farbmarke beinhaltet dunkelblau (#0041c8) und türkis (#00576c). Diese Farben werden hauptsächlich für Farbverläufe eingesetzt.</p>
+          </article>
+        </div>
+        <h2>Nizza-Klassen</h2>
+        <p>Klasse 41: Lifty bietet digitale Fitness-Dienstleistungen, wie das Erstellen von Trainingsplänen und das Speichern Workout-Daten. Damit fällt es in die Kategorie der Dienstleistungen eine Sport- und Fitnesstrainers.
+        </p>
+        <p>
+          Klasse 42: Lifty stellt software-basierte Dienstleistungen über einen Browser bereit und gilt somit als Software as a Service (SaaS).
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html">
+          <div class="brand-symbol small" aria-label="Lifty Bildmarke"></div>
+          <span>Lifty</span>
+        </a>
+        <p class="muted">© 2026 Lifty.</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Website">
+        <strong>Website</strong>
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+
+      <nav class="footer-links" aria-label="Rechtliches">
+        <strong>Rechtliches</strong>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="lizenz.html">Lizenz</a>
+        <a href="barrierefreiheit.html">Barrierefreiheitserklärung</a>
+        <a href="urheberrecht.html">Urheberrecht & Medien</a>
+      </nav>
+
+    </div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

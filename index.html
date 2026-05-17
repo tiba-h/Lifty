@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Startseite des fiktiven Lifty Workout-Webshops">
+  <title>Lifty | Adaptiver Workout-Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Hauptnavigation">
+      <a class="logo" href="index.html" aria-label="Lifty Startseite">
+        <div class="brand-symbol small" aria-label="Lifty Bildmarke"></div>
+        <span>Lifty</span>
+      </a>
+
+      <button class="menu-button" type="button" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="main-menu">
+        <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+      </button>
+
+      <ul class="nav-links" id="main-menu">
+        <li><a aria-current="page" href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Trainingspläne, die sich <span>deinem Leben anpassen.</span></h1>
+          <p>
+            Lifty bietet digitale Trainingspläne für Einsteiger*innen.
+            Du wählst deinen Fokus, dein verfügbares Equipment und dein Zeitbudget.
+            Daraus entsteht ein Plan, der zu deinem Alltag passt.
+          </p>
+          <div class="button-group">
+            <a class="button button-primary" href="#planwahl">Plan wählen</a>
+            <a class="button button-muted" href="#funktionen">Funktionen ansehen</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80" alt="Person trainiert einen Deadlift mit einer Langhantel im Fitnessstudio">
+          <article class="progress-card">
+            <p>Wochenziel</p>
+            <strong>84%</strong>
+            <span>Fortschritt im Wochenplan</span>
+            <div class="progress-bar" aria-label="84 Prozent erreicht">
+              <div style="width: 84%"></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface-section" id="funktionen">
+      <div class="container split-grid">
+        <div>
+          <span class="eyebrow">So funktioniert Lifty</span>
+          <h2>Dein Trainingsplan basiert auf deinen Angaben.</h2>
+          <p class="lead">
+            Beim Erstellen des Plans gibst du an, worauf dein Training ausgerichtet sein soll,
+            welche Utensilien du zur Verfügung hast und wie viel Zeit du pro Woche investieren kannst.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="tags">
+            <span class="tag">Muskelaufbau</span>
+            <span class="tag">Gewichtsabnahme</span>
+            <span class="tag">Ausdauer</span>
+            <span class="tag">Calisthenics</span>
+            <span class="tag">Keine Geräte</span>
+            <span class="tag">Hanteln</span>
+            <span class="tag">Fitnessstudio</span>
+            <span class="tag">Calisthenics Park</span>
+            <span class="tag">2–5 Tage pro Woche</span>
+            <span class="tag">20–90 Minuten</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Was Lifty adaptiv macht</h2>
+          <p>Der Plan bleibt nicht statisch, sondern reagiert auf typische Situationen im Training.</p>
+        </div>
+
+        <div class="bento-grid">
+          <article class="card card-large image-card">
+            <div>
+              <span class="material-symbols-outlined icon" aria-hidden="true">sync_alt</span>
+              <h3>Spontane Zeitänderungen</h3>
+              <p>
+                Wenn du statt 60 Minuten nur 25 Minuten hast, priorisiert Lifty die wichtigsten Übungen
+                und kürzt weniger wichtige Zusatzübungen.
+              </p>
+            </div>
+            <img src="https://images.unsplash.com/flagged/photo-1556746834-1cb5b8fabd54?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mann läuft auf einer Straße">
+          </article>
+
+          <article class="card card-small card-primary">
+            <span class="material-symbols-outlined icon" aria-hidden="true">healing</span>
+            <h3>Verletzungsanpassung</h3>
+            <p>Bei Einschränkungen werden belastende Übungen ersetzt und die Intensität angepasst.</p>
+          </article>
+
+          <article class="card card-small card-muted">
+            <span class="material-symbols-outlined icon" aria-hidden="true">edit_note</span>
+            <h3>Logging</h3>
+            <p>Gewichte, Wiederholungen, Sätze und Trainingsfortschritt können protokolliert werden.</p>
+          </article>
+
+          <article class="card card-wide image-card">
+            <div>
+              <span class="material-symbols-outlined icon" aria-hidden="true">home_repair_service</span>
+              <h3>Equipment-Flexibilität</h3>
+              <p>
+                Der Trainingsplan funktioniert mit Körpergewicht, Hanteln,
+                im Fitnessstudio oder im Calisthenics Park.
+              </p>
+            </div>
+
+            <img
+              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Frau macht Crunches auf einer Matte"
+            >
+
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="planwahl">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Wähle deinen Plan</h2>
+          <p>Starte flexibel und entscheide selbst, welches Modell am besten zu dir passt.</p>
+        </div>
+
+        <div class="grid-3 pricing-grid">
+          <article class="card product-card">
+            <span class="material-symbols-outlined icon" aria-hidden="true">redeem</span>
+            <h3>Gratis Probemonat</h3>
+            <p>Teste Lifty einen Monat lang und probiere die adaptiven Trainingspläne aus.</p>
+            <p class="price">€0</p>
+            <ul class="feature-list">
+              <li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span>1 Monat kostenlos</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span>Alle Grundfunktionen testen</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span>Ideal zum Einstieg</li>
+            </ul>
+            <button class="button button-primary button-full add-to-cart" type="button" data-product="Gratis Probemonat">Auswählen</button>
+          </article>
+
+          <article class="card product-card featured">
+            <span class="badge">Beliebt</span>
+            <span class="material-symbols-outlined icon" aria-hidden="true">calendar_month</span>
+            <h3>Monatlich</h3>
+            <p>Volle Flexibilität mit monatlicher Nutzung der adaptiven Trainingsplanung.</p>
+            <p class="price">€7,99</p>
+            <ul class="feature-list">
+              <li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span>Monatlich nutzbar</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span>Adaptive Anpassungen</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span>Logging von Trainingsergebnissen</li>
+            </ul>
+            <button class="button button-secondary button-full add-to-cart" type="button" data-product="Monatsplan">Auswählen</button>
+          </article>
+
+          <article class="card product-card">
+            <span class="material-symbols-outlined icon" aria-hidden="true">workspace_premium</span>
+            <h3>Jährlich</h3>
+            <p>Der Jahresplan für langfristiges Training mit besserem Preis pro Monat.</p>
+            <p class="price">€49,99</p>
+            <ul class="feature-list">
+              <li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span>12 Monate Zugriff</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span>Günstiger als monatlich</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span>Für langfristige Ziele</li>
+            </ul>
+            <button class="button button-primary button-full add-to-cart" type="button" data-product="Jahresplan">Auswählen</button>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html">
+          <div class="brand-symbol small" aria-label="Lifty Bildmarke"></div>
+          <span>Lifty</span>
+        </a>
+        <p class="muted">© 2026 Lifty.</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Website">
+        <strong>Website</strong>
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+
+      <nav class="footer-links" aria-label="Rechtliches">
+        <strong>Rechtliches</strong>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="lizenz.html">Lizenz</a>
+        <a href="barrierefreiheit.html">Barrierefreiheitserklärung</a>
+        <a href="urheberrecht.html">Urheberrecht & Medien</a>
+      </nav>
+
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

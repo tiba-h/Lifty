@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontaktseite des fiktiven Lifty Webshops">
+  <title>Lifty | Kontakt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Hauptnavigation">
+      <a class="logo" href="index.html" aria-label="Lifty Startseite">
+        <div class="brand-symbol small" aria-label="Lifty Bildmarke"></div>
+        <span>Lifty</span>
+      </a>
+      <button class="menu-button" type="button" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="main-menu">
+        <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+      </button>
+      <ul class="nav-links" id="main-menu">
+        <li><a  href="index.html">Home</a></li>
+        <li><a  href="about.html">About us</a></li>
+        <li><a aria-current="page" href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Kontakt</span>
+        <h1>Fragen zu Lifty?</h1>
+        <p class="lead">Für Fragen, Support oder Feedback zum fiktiven Webshop, nutze das Formular oder kotaktiere uns telefonisch oder per E-Mail.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container split-grid">
+        <div class="card">
+          <h2>Kontaktformular</h2>
+          <form class="form contact-form">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div>
+              <label for="email">E-Mail</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div>
+              <label for="topic">Thema</label>
+              <select id="topic" name="topic">
+                <option>Produktfrage</option>
+                <option>Support</option>
+                <option>Feedback</option>
+                <option>Sonstiges</option>
+              </select>
+            </div>
+            <div>
+              <label for="message">Nachricht</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+          
+
+            <label class="checkbox-group">
+              <input type="checkbox" required>
+              <span>
+                Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und akzeptiere die Verarbeitung meiner Daten.
+              </span>
+            </label>
+
+            <button class="button button-primary" type="submit">Nachricht absenden</button>
+          </form>
+        </div>
+        <aside class="card card-muted">
+          <h2>Kontaktinformationen</h2>
+          <p>support@lifty.at</p>
+          <p>+43 123 4567890</p>
+          <p>Wir sind Montag bis Freitag 9:00-17:00 Uhr erreichbar.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html">
+          <div class="brand-symbol small" aria-label="Lifty Bildmarke"></div>
+          <span>Lifty</span>
+        </a>
+        <p class="muted">© 2026 Lifty.</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Website">
+        <strong>Website</strong>
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+
+      <nav class="footer-links" aria-label="Rechtliches">
+        <strong>Rechtliches</strong>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="lizenz.html">Lizenz</a>
+        <a href="barrierefreiheit.html">Barrierefreiheitserklärung</a>
+        <a href="urheberrecht.html">Urheberrecht & Medien</a>
+      </nav>
+
+    </div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
